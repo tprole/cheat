@@ -1,4 +1,4 @@
-#Carina D'Souza & Ember Prole
+#Tara Prole
 #8 Dec 2021 
 #A6cheat.py
 #Creating the card game "cheat" on a text-based interface
@@ -6,7 +6,7 @@
 import random
 import time
 
-#EMBER
+#TARA
 #mainMenu()
 #prints a welcome message to the user and explains how to play.
 #@param: none
@@ -105,7 +105,7 @@ def sortCards(playerCards):
     return sortedCards
 
 
-#EMBER
+#TARA
 #getRange()
 #helps with displaying the cards by getting a range of where each type of card is located in a list, once sorted.
 #@param: hand:str[], lookingFor:str
@@ -120,7 +120,7 @@ def getRange(hand, lookingFor):
           return []
 
 
-#EMBER
+#TARA
 #showCards()
 #gets sorted cards as a parameter and shows them to the user.
 #@param: sortedCards:str[]
@@ -141,7 +141,7 @@ def showCards(sortedCards):
       print("Q: {}".format(len(getRange(sortedCards, "Q"))))
       print("K: {}".format(len(getRange(sortedCards, "K"))))
 
-#EMBER
+#TARA
 #getPlayerMove()
 #Gets input for cards to be played, stores if the play is a cheat, then returns an updated hand with the play and cheat status.
 #@param: sortedCards:str[], supposedToPlay:str
@@ -228,7 +228,7 @@ def isPlayerCheating(playedCards, numCards, discardPile, callersCards):
     else: 
       return False
 
-#EMBER
+#TARA
 #computerMove()
 #gets the computer to create a play by looking at the cards they have- if they have the card they're supposed to play, they play it. Otherwise it cheats using the card that is has most of.
 #@param: computerCards:str[], mustPlay:str, compNum:str
